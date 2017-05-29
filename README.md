@@ -18,14 +18,16 @@ In order to run it locally you'll need to install some dependencies and a basic 
 
  ```sh
     $ npm install
-    ```
+ ```
+ 
 2 - Install bower dependencies
  ```sh
     $ bower install
-    ```
+ ```
+ 
 3 - Run the app
  ```sh
     $ gulp
-    ```
+ ```
 
-Of Course, you can just up a simple web server http. But the app will run without BrowserSync.
+Obs.: Of Course, you can just up a simple web server http. But the app will run without BrowserSync.
