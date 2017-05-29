@@ -39,7 +39,7 @@
     </ul>
 
     <ul class="products-list">
-      <product data="item" prods-list="prodsList" ng-repeat="item in products | filter: search | isArtGroup: selectedGroup"></product>
+      <product data="item" prods-list="prodsList" ng-repeat="item in products | filter: search | productGroup: selectedGroup"></product>
     </ul>
 
     <bag prods-list="prodsList"></bag>
