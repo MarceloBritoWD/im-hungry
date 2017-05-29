@@ -1,6 +1,6 @@
 # I'm Hungry project
 
-##Technologies
+## Technologies
 - HTML5
 - CSS3
 - Angular 1.6
@@ -11,18 +11,19 @@
 - NPM
 
 
-##Running
+## Running
 In order to run it locally you'll need to install some dependencies and a basic server setup. You i'll need nodeJS, GulpJS and Bower Installed.
 
-1. Install npm dependencies
+1 - Install npm dependencies
+
  ```sh
     $ npm install
     ```
-2. Install bower dependencies
+2 - Install bower dependencies
  ```sh
     $ bower install
     ```
-3. Run the app
+3 - Run the app
  ```sh
     $ gulp
     ```
