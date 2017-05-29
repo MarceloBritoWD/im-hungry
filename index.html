@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="imHungryApp">
+<head>
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <meta charset="UTF-8">
+  <meta name="description" content="" />
+  <!-- <link rel="icon" href="imagens/favicon-.png" type="image/png" /> -->
+  <title>I'm Hungry!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <link href="css/styles.min.css" rel="stylesheet" media="screen" />
+  <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" media="screen" />
+</head>
+
+<body ng-controller="MainCtrl as vm">
+  <header class="header">
+    <h1>I'm Hungry!</h1>
+
+    <div class="container-search">
+      <input type="text" placeholder="Search..." ng-model="search">
+    </div>
+  </header>
+
+  <main>
+    <ul class="list-categories">
+      <li class="item">
+        <a href="#">
+          <img src="img/all.svg" alt="" />
+        </a>
+      </li>
+
+      <li class="item">
+        <a ng-model="chinese">
+          <img src="img/1.svg" alt="" />
+          <span class="title-categorie">Chinese</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#">
+          <img src="img/1.svg" alt="" />
+          <span class="title-categorie">Chinese</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#">
+          <img src="img/1.svg" alt="" />
+          <span class="title-categorie">Chinese</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#">
+          <img src="img/1.svg" alt="" />
+          <span class="title-categorie">Chinese</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#">
+          <img src="img/1.svg" alt="" />
+          <span class="title-categorie">Chinese</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a href="#">
+          <img src="img/1.svg" alt="" />
+          <span class="title-categorie">Chinese</span>
+        </a>
+      </li>
+
+      <li class="item">
+        <a ng-click="setGroup(products[1].cuisine)">
+          <img src="img/1.svg" alt="" />
+          <span class="title-categorie">Chinese</span>
+        </a>
+      </li>
+
+
+
+      <li class="item">
+        <a href="#">
+          <img src="img/1.svg" alt="" />
+          <span class="title-categorie">Chinese</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="products-list">
+      <product data="item" prods-list="prodsList" ng-repeat="item in products | filter: search | isArtGroup: selectedGroup"></product>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bag prods-list="prodsList"></bag>
+  </main>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="components/bag/bag.component.js"></script>
+  <script src="components/product/product.component.js"></script>
+</body>
+</html>

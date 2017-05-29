@@ -1,0 +1,22 @@
+{
+  "name": "im-hungry",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Marcelo Brito <marcelobritowd@hotmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.4",
+    "animate.css": "animate-css#~3.5.2"
+  }
+}

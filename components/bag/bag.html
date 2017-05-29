@@ -1,0 +1,28 @@
+<a class="btn-open-bag">
+  <span>Your bag</span>
+  <img src="imgs/bag.png" alt="" />
+  <span>({{$ctrl.prodsListSize()}}) Products</span>
+</a>
+
+<div class="bag-full">
+  <header class="header-bag">
+    <img src="imgs/bag.png" alt="" />
+    <h1>Your bag <small>({{$ctrl.prodsListSize()}}) Products</small></h1>
+    <button class="close-bag"></button>
+  </header>
+
+  <ul class="list-items">
+    <li ng-repeat="item in $ctrl.prodsList">
+      <span class="qtt-item">{{item.quantity}}</span>
+      <span class="title-item">{{item.title}}</span>
+      <div class="btns-qtt">
+        <button class="dec-item" ng-click="$ctrl.decrementItem(item.id)"></button>
+        <button class="inc-item" ng-click="$ctrl.incrementItem(item.id)"></button>
+      </div>
+    </li>
+  </ul>
+
+  <small class="price-bag">TOTAL: $ {{$ctrl.calcPricetotal()}}</small>
+
+  <button class="proceed-btn">Proceed To Checkout</button>
+</div>
