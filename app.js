@@ -31,4 +31,4 @@ angular.module('imHungryApp').filter('isArtGroup', function(){
       return value.cuisine === groupId;
     })
   }
-})
+});

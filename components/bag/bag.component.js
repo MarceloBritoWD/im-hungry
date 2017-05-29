@@ -53,10 +53,7 @@ var bagController = function () {
   ctrl.proceedToCheckout = function() {
     var overlay = document.querySelector('.overlay');
     overlay.style.display = "block";
-  }
-
-
-
+  };
 
   ctrl.bagBtn = document.querySelector('.btn-open-bag');
   ctrl.bagFull = document.querySelector('.bag-full');
