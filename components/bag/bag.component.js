@@ -1,16 +1,12 @@
-function bagController() {
+var bagController = function () {
   var ctrl = this;
 
-
-  ctrl.$onInit = function() {
-    ctrl.prodsListSize = function() {
-      var quantityTotal = 0;
-      for (var i = 0; i < ctrl.prodsList.length; i++) {
-        quantityTotal += ctrl.prodsList[i].quantity;
-      }
-      return quantityTotal;
-    };
-
+  ctrl.prodsListSize = function() {
+    var quantityTotal = 0;
+    for (var i = 0; i < ctrl.prodsList.length; i++) {
+      quantityTotal += ctrl.prodsList[i].quantity;
+    }
+    return quantityTotal;
   };
 
   ctrl.incrementItem = function(id) {
@@ -27,7 +23,6 @@ function bagController() {
   // Decrement the quantity of a object in produs-list
   ctrl.decrementItem = function(id) {
     ctrl.calcPricetotal();
-
     for (var i = 0; i < ctrl.prodsList.length; i++) {
       if (ctrl.prodsList[i].id === id) {
         if (ctrl.prodsList[i].quantity === 1) {
@@ -55,8 +50,10 @@ function bagController() {
     localStorage.setItem("prodsList", localStrProdslist);
   };
 
-
-
+  ctrl.proceedToCheckout = function() {
+    var overlay = document.querySelector('.overlay');
+    overlay.style.display = "block";
+  }
 
 
 
