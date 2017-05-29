@@ -7,18 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <link href="css/styles.min.css" rel="stylesheet" media="screen" />
   <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" media="screen" />
+  <link href="bower_components/bootstrap-grid-only/css/grid12.css" rel="stylesheet" media="all" />
 </head>
 
 <body ng-controller="MainCtrl as vm">
-  <header class="header">
+  <header class="header col-xs-12">
     <h1>I'm Hungry!</h1>
-
-    <div class="container-search">
-      <input type="text" placeholder="Search..." ng-model="search">
-    </div>
   </header>
 
-  <main>
+    <div class="container-search col-xs-12">
+      <div class="row">
+        <input class="col-xs-9 col-lg-4 col-lg-offset-6" type="text" placeholder="Search..." ng-model="search">
+      </div>
+  </div>
+
+  <main class="container">
     <ul class="list-categories">
       <li class="item all" >
         <a ng-click="setGroup(all)">
