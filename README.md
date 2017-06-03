@@ -10,8 +10,13 @@
 - Bower
 - NPM
 
+## Running on gh-pages
+1- Open the following link:
 
-## Running
+[I'm Hungry app](http://marcelobritowd.com/im-hungry/)
+
+
+## Running localy
 In order to run it locally you'll need to install some dependencies and a basic server setup. You i'll need nodeJS, GulpJS and Bower Installed.
 
 1 - Install npm dependencies
