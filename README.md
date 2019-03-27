@@ -13,7 +13,7 @@
 ## Running on gh-pages
 1- Open the following link:
 
-[I'm Hungry app](http://marcelobritowd.com/im-hungry/)
+[I'm Hungry app](https://marcelobritowd.github.io/im-hungry/)
 
 
 ## Running localy
